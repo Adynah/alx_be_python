@@ -10,7 +10,7 @@ match operation:
         result = (num1 * num2)
     case "/":
         if num2 == 0:
-            print("Error: Division by zero is not allowed.")
+            print("Cannot divide by zero.")
         else:
             result = (num1 / num2)
 print(f"The result is {result}.")
