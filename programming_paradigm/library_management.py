@@ -1,4 +1,4 @@
-class Book():
+class Book:
     def __init__(self, title, author):
         self.title = title
         self.author = author
@@ -24,9 +24,11 @@ class Library():
         self._books = []
     
     def add_book(self, book):
+        """Add a Book instance to the library"""
         self._books.append(book)
     
     def check_out_book(self, title):
+        """Check out a book by title if available"""
         for book in self._books:
             if book.title == title and book.is_available():
                 book.check_out()
@@ -34,6 +36,7 @@ class Library():
         return f" '{title}' is unavailable."
     
     def return_book(self, title):
+        """Return a book by title"""
         for book in self._books:
             if book.title == title and book.is_available():
                 book.return_book()
