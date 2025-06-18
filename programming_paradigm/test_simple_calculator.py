@@ -14,10 +14,10 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.add(-1, 5), 4)
 
     # Test for substraction
-    def test_substract(self):
-        self.assertEqual (self.calc.substract(5, 3), 2)
-        self.assertEqual(self.calc.substract(0, 5), -5)
-        self.assertEqual(self.calc.substract(-5, -2), -3)
+    def test_subtract(self):
+        self.assertEqual (self.calc.subtract(5, 3), 2)
+        self.assertEqual(self.calc.subtract(0, 5), -5)
+        self.assertEqual(self.calc.subtract(-5, -2), -3)
     
     # Test for multiplication
     def test_multiply(self):
